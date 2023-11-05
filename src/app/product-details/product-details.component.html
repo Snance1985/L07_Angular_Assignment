@@ -1,0 +1,9 @@
+<div *ngIf="product">
+    <h2>{{product.productName}}</h2>
+    <p>{{product.description}}</p>
+    <p>Price: ${{product.price}}</p>
+    <button (click)="deleteProduct()">Delete</button>
+    <button routerLink="/products/{{product.id}}/edit">Edit</button>
+    <button (click)="goBack()">Back</button>
+  </div>
+  
